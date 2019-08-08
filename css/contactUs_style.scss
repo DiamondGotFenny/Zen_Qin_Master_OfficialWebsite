@@ -1,0 +1,58 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+main {
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+.contactCont {
+  color: $logoQinColor;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  text-align: left;
+  @include for-tablet-landscape-up {
+    font-size: 1.5rem;
+  }
+}
+
+.contactForm {
+  @include formSetting;
+}
+.contactInfo {
+  color: $logoQinColor;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.address {
+  margin-top: 1rem;
+}
+img.addressmap {
+  @include imageSetting;
+  margin: 0 0 1rem 0;
+}
+
+.social-media {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  margin: 1rem 0;
+  img.smidIcon {
+    width: 3rem;
+    height: auto;
+    transition: transform 0.5s ease;
+    &:hover {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.Iconlicense {
+  font-size: 0.5rem;
+}

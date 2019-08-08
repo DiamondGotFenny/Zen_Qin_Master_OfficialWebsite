@@ -1,0 +1,26 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+.formTitle {
+  color: $darkBrown;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  @include for-tablet-landscape-up {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.enrollForm {
+  @include formSetting;
+  @include for-tablet-landscape-up {
+    width: 900px;
+    font-size: 1.3rem;
+    margin: 0 auto;
+  }
+}

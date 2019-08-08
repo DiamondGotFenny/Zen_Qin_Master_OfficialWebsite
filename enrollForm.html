@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/enroll_style.css" />
+    <title>Enroll-Zen Qin Master</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div class="icon-wrapper .clearfix">
+          <a href="index.html"
+            ><img id="logo_header" src="./img/Logo.png" alt="logo"
+          /></a>
+
+          <a
+            href="javascript:void(0);"
+            onclick="activeNavMenu()"
+            class="icon"
+            id="mainNavIcon"
+          >
+            <svg width="70" height="70">
+              <image href="./img/menuBarIcon.svg" width="70" height="70" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="topMenu" id="topMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./shows.html">Shows</a></li>
+          <li><a href="#">Online Coaching</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="formTitle">Application for Enrollment and Inquiry</p>
+      <form action="#" class="enrollForm">
+        <label for="gender">Gender: </label>
+        <input type="radio" name="gender" id="male" value="male" required />Male
+        <input type="radio" name="gender" id="female" value="female" />Female
+        <input
+          type="radio"
+          name="gender"
+          id="miss"
+          value="married"
+        />Other<br />
+
+        <label for="fname">First Name</label><br />
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+          required
+        /><br />
+
+        <label for="lname">Last Name</label><br />
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your last name.."
+          required
+        /><br />
+        <label for="courses">Courses: </label><br />
+        <select name="courses" required>
+          <option value="freeTrial">Free Trial Class</option>
+          <option value="One-to-One" selected>One-to-One Class</option>
+          <option value="entry">Entry Level Interest Class</option>
+          <option value="intermediate"
+            >Intermediate Level Interest Class</option
+          >
+          <option value="advanced">Advanced Level Interest Class</option>
+          <option value="professional"
+            >Professional Level Interest Class</option
+          >
+          <option value="onlineCourse">Online Course</option> </select
+        ><br />
+        <label for="entryDate">Expecting Dates of Attendance</label><br />
+        <input type="date" id="entryDate" name="entryDate" required /><br />
+        <label for="email">Email</label><br />
+
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Your Email.."
+          required
+        /><br />
+        <label for="inquiry">Inquiry</label><br />
+        <textarea
+          id="inquiry"
+          name="inquiry"
+          style="height:200px"
+          required
+        ></textarea
+        ><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </main>
+
+    <footer>
+        <nav class="bottom-nav">
+            <a href="./enrollForm.html" class="enrollBtn">Enroll Now!</a>
+          <ul class="bottomMenu" id="bottomMenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./shows.html">Shows</a></li>
+            <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+            <li><a href="./contactUs.html">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Private Policy</a></li>
+          </ul>
+          <div class="icon-wrapper">
+              <a href="index.html"
+                ><img id="logo_footer" src="./img/Logo.png" alt="logo"
+              /></a>
+          <div class="copyright">&copy COPYRIGHT 2019 Diamondcn923 All Right RESERVED</div>
+        </nav>
+      </footer>
+
+    <script>
+      function activeNavMenu() {
+        const topMenu = document.getElementById("topMenu");
+
+        if (topMenu.className === "topMenu") {
+          topMenu.style.animation = "topMenuDisplay 1s ease forwards";
+          topMenu.className += " display";
+        } else {
+          topMenu.className = "topMenu";
+
+          topMenu.style.animation = "topMenuclapsed 1s ease forwards";
+        }
+      }
+    </script>
+  </body>
+</html>

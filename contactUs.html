@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/contactUs_style.css" />
+    <title>Contact Us-Zen Qin Master</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div class="icon-wrapper .clearfix">
+          <a href="index.html"
+            ><img id="logo_header" src="./img/Logo.png" alt="logo"
+          /></a>
+
+          <a
+            href="javascript:void(0);"
+            onclick="activeNavMenu()"
+            class="icon"
+            id="mainNavIcon"
+          >
+            <svg width="70" height="70">
+              <image href="./img/menuBarIcon.svg" width="70" height="70" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="topMenu" id="topMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="./courses.html">Courses</a></li>
+          <li><a href="./shows.html">Shows</a></li>
+          <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contactTitle">
+        <h1>Contact Us</h1>
+        <p class="contactCont">
+          We value your opinion very much and are happy to answer your
+          questions. If you have any suggestions or criticisms, you are welcome
+          to write to us. We will listen carefully and respond to you as soon as
+          possible, thank you.
+        </p>
+      </section>
+      <section class="contactMethods">
+        <form action="#" class="contactForm">
+          <label for="name">Name</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your name.."
+            required
+          /><br />
+
+          <label for="email">Email</label><br />
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email.."
+            required
+          /><br />
+          <label for="inquiry">Inquiry</label><br />
+          <textarea
+            id="inquiry"
+            name="inquiry"
+            style="height:200px"
+            required
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Submit" />
+        </form>
+        <div class="contactInfo">
+          <p id="companyTitle">Zen Qin Master Guzheng Class</p>
+          <p>Tel: 020 3655 7512</p>
+          <p>Fax: 020 3655 9852</p>
+          <p>
+            Email:
+            <a href="mailto:zenqinMaster@gmail.com">zenqinMaster@gmail.com</a>
+          </p>
+          <div class="social-media">
+            <a href="https://www.facebook.com/"
+              ><img class="smidIcon" src="./img/facebook.svg" alt="our facebook"
+            /></a>
+            <a href="https://twitter.com/?lang=en"
+              ><img class="smidIcon" src="./img/twitter.svg" alt="our twitter"
+            /></a>
+            <a href="https://www.instagram.com"
+              ><img
+                class="smidIcon"
+                src="./img/instagram.svg"
+                alt="our instagram"
+            /></a>
+            <a href="https://www.skype.com/en/"
+              ><img class="smidIcon" src="./img/skype.svg" alt="our skype"
+            /></a>
+            <a href="https://wx.qq.com/"
+              ><img class="smidIcon" src="./img/weechat.png" alt="our skype"
+            /></a>
+          </div>
+          <div class="Iconlicense">
+            Icons made by
+            <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon"
+              >www.flaticon.com</a
+            >
+            is licensed by
+            <a
+              href="http://creativecommons.org/licenses/by/3.0/"
+              title="Creative Commons BY 3.0"
+              target="_blank"
+              >CC 3.0 BY</a
+            >
+          </div>
+          <div class="address">
+            Address:
+            <address>
+              Tianjun Ge 1023, Tianhe Road No.365, Guangzhou, Guangdong, China
+            </address>
+          </div>
+        </div>
+        <img class="addressmap" src="./img/address.JPG" alt="addressmap" />
+      </section>
+    </main>
+
+    <footer>
+        <nav class="bottom-nav">
+            <a href="./enrollForm.html" class="enrollBtn">Enroll Now!</a>
+          <ul class="bottomMenu" id="bottomMenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./shows.html">Shows</a></li>
+            <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+            <li><a href="./contactUs.html">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Private Policy</a></li>
+          </ul>
+          <div class="icon-wrapper">
+              <a href="index.html"
+                ><img id="logo_footer" src="./img/Logo.png" alt="logo"
+              /></a>
+          <div class="copyright">&copy COPYRIGHT 2019 Diamondcn923 All Right RESERVED</div>
+        </nav>
+      </footer>
+
+    <script>
+      function activeNavMenu() {
+        const topMenu = document.getElementById("topMenu");
+
+        if (topMenu.className === "topMenu") {
+          topMenu.style.animation = "topMenuDisplay 1s ease forwards";
+          topMenu.className += " display";
+        } else {
+          topMenu.className = "topMenu";
+
+          topMenu.style.animation = "topMenuclapsed 1s ease forwards";
+        }
+      }
+    </script>
+  </body>
+</html>

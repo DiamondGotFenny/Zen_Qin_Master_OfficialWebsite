@@ -1,0 +1,43 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+.studioIntro p {
+  padding: 1rem;
+}
+.card {
+  @include card;
+
+  h1 {
+    margin: 1rem 0;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
+
+.team_member {
+  text-align: center;
+
+  h3 {
+    color: $logoZenColor;
+  }
+  p {
+    color: $logoQinColor;
+  }
+  img {
+    @include imageSetting;
+  }
+
+  ul {
+    padding: 1rem 0;
+    li {
+      margin: 1rem;
+    }
+  }
+}

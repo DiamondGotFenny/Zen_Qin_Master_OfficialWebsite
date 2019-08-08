@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/courseFee_style.css" />
+    <title>More About Courses-Zen Qin Master</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div class="icon-wrapper .clearfix">
+          <a href="index.html"
+            ><img id="logo_header" src="./img/Logo.png" alt="logo"
+          /></a>
+
+          <a
+            href="javascript:void(0);"
+            onclick="activeNavMenu()"
+            class="icon"
+            id="mainNavIcon"
+          >
+            <svg width="70" height="70">
+              <image href="./img/menuBarIcon.svg" width="70" height="70" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="topMenu" id="topMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="./shows.html">Shows</a></li>
+          <li><a href="#">Online Coaching</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Intest Class Tuition and Schedule Reference</h1>
+      <ul class="ClassRef">
+        <li class="level card">
+          <span class="lvName">Entry Level:</span>
+          <ul class="classIntro">
+            <li>
+              <span class="clsInfo">Timetable: </span>Every Monday night 7:00 PM
+              to 8:00 PM
+            </li>
+            <li>
+              <span class="clsInfo">Curriculum: </span>two months, 8 lessons, 1
+              hour per lesson
+            </li>
+            <li><span class="clsInfo">Tuition: </span>120rmb per hour</li>
+            <li>
+              <span class="clsInfo">Requirement: </span>Suitable for everyone
+            </li>
+          </ul>
+          <a class="enrollBtn" href="./enrollForm.html">Enroll Now</a>
+        </li>
+        <li class="level card">
+          <span class="lvName">Intermediate Level:</span>
+          <ul class="classIntro">
+            <li>
+              <span class="clsInfo">Timetable: </span>Every Tuesday night 8:00
+              PM to 9:00 PM
+            </li>
+            <li>
+              <span class="clsInfo">Curriculum: </span>two months, 8 lessons, 1
+              hour per lesson
+            </li>
+            <li><span class="clsInfo">Tuition: </span>135rmb per hour</li>
+            <li>
+              <span class="clsInfo">Requirement: </span>
+              Suitable for people who have a basic Guzheng knowledges. The
+              content of teaching is about one and two level songs
+            </li>
+          </ul>
+          <a class="enrollBtn" href="./enrollForm.html">Enroll Now</a>
+        </li>
+        <li class="level card">
+          <span class="lvName">Advanced Level:</span>
+          <ul class="classIntro">
+            <li>
+              <span class="clsInfo">Timetable: </span>Every Wedsday night 8:00
+              PM to 9:00 PM
+            </li>
+            <li><span class="clsInfo">Curriculum: </span>1 hour per lesson</li>
+            <li><span class="clsInfo">Tuition: </span>165rmb per hour</li>
+            <li>
+              <span class="clsInfo">Requirement: </span>
+              Suitable for people who already studied level 2 or above songs
+            </li>
+          </ul>
+          <a class="enrollBtn" href="./enrollForm.html">Enroll Now</a>
+        </li>
+        <li class="level card">
+          <span class="lvName">Professional Level:</span>
+          <ul class="classIntro">
+            <li>
+              <span class="clsInfo">Timetable: </span>Every Thursday night 8:00
+              PM to 9:00 PM
+            </li>
+            <li><span class="clsInfo">Curriculum: </span>1 hour per lesson</li>
+            <li><span class="clsInfo">Tuition: </span>200rmb per hour</li>
+            <li>
+              <span class="clsInfo">Requirement: </span>
+              Suitable for people who want to study more Guzheng techniques and
+              theory
+            </li>
+          </ul>
+          
+        </li>
+      </ul>
+    </main>
+
+    <footer>
+        <nav class="bottom-nav">
+            <a href="./enrollForm.html" class="enrollBtn">Enroll Now!</a>
+          <ul class="bottomMenu" id="bottomMenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./shows.html">Shows</a></li>
+            <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+            <li><a href="./contactUs.html">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Private Policy</a></li>
+          </ul>
+          <div class="icon-wrapper">
+              <a href="index.html"
+                ><img id="logo_footer" src="./img/Logo.png" alt="logo"
+              /></a>
+          <div class="copyright">&copy COPYRIGHT 2019 Diamondcn923 All Right RESERVED</div>
+        </nav>
+      </footer>
+
+    <script>
+      function activeNavMenu() {
+        const topMenu = document.getElementById("topMenu");
+
+        if (topMenu.className === "topMenu") {
+          topMenu.style.animation = "topMenuDisplay 1s ease forwards";
+          topMenu.className += " display";
+        } else {
+          topMenu.className = "topMenu";
+
+          topMenu.style.animation = "topMenuclapsed 1s ease forwards";
+        }
+      }
+    </script>
+  </body>
+</html>

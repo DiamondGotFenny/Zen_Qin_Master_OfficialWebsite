@@ -1,0 +1,88 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+main {
+  li {
+    margin: 1rem 0;
+  }
+
+  .busiSer {
+    h3 {
+      color: $darkBrown;
+      text-align: center;
+      margin: 1rem 0;
+    }
+  }
+  .card {
+    @include card;
+    img {
+      @include imageSetting;
+    }
+    margin-top: 1rem;
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  .service-content {
+    padding: 0 1rem;
+  }
+
+  .activities {
+    padding: 1rem 0;
+    span {
+      display: block;
+      margin: 0.3rem 1rem 2rem 1rem;
+    }
+  }
+  .band-content {
+    text-align: left;
+    padding: 1rem;
+  }
+
+  .CService {
+    font-size: 1.2rem;
+    color: $logoZenColor;
+    font-weight: bold;
+  }
+
+  .bandIntro {
+    padding-top: 1rem;
+    margin: 1rem 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+    .busiSer {
+      h3 {
+        font-size: 1.5rem;
+        margin: 1.5rem 0;
+      }
+    }
+    .CService {
+      font-size: 1.5rem;
+    }
+    .service-content {
+      font-size: 1.2rem;
+    }
+    .activities {
+      font-size: 1.2rem;
+      span {
+        margin: 0.5rem 1rem 3rem 1rem;
+      }
+    }
+    .card {
+      margin-top: 2rem;
+    }
+    .band-content {
+      font-size: 1.2rem;
+    }
+  }
+}

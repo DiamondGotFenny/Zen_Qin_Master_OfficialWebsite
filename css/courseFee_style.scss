@@ -1,0 +1,75 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+.ClassRef {
+  .level {
+    @include card;
+    padding: 1rem 0;
+    margin: 1rem 0;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+    .lvName {
+      @media (max-width: 899px) {
+        font-size: 1.5rem;
+      }
+
+      font-weight: bold;
+      color: $logoZenColor;
+    }
+    p {
+      @media (max-width: 899px) {
+        font-size: 1.2rem;
+      }
+
+      color: $logoZenColor;
+    }
+
+    .classIntro {
+      @media (max-width: 899px) {
+        margin: 1rem 0;
+        li {
+          margin: 0.5rem 6px;
+        }
+      }
+
+      text-align: left;
+    }
+    .clsInfo {
+      color: $logoZenColor;
+      @media (max-width: 899px) {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .enrollBtn {
+    @include enrolBtn;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+    .lvName {
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.5rem;
+    }
+    .clsInfo {
+      font-size: 1.5rem;
+    }
+    .classIntro {
+      margin: 1.5rem 0;
+    }
+    li {
+      font-size: 1.2rem;
+      margin: 0.8rem 10px;
+    }
+    .enrollBtn {
+      @include enrolBtn-large-screen;
+    }
+  }
+}

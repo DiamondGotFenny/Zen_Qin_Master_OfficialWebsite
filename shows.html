@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/shows_style.css" />
+    <title>Lessons-Zen Qin Guzheng Classroom</title>
+  </head>
+  <body>
+    <header>
+      <nav id="main-nav">
+        <div class="icon-wrapper .clearfix">
+          <a href="index.html"
+            ><img id="logo_header" src="./img/Logo.png" alt="logo"
+          /></a>
+
+          <a
+            href="javascript:void(0);"
+            onclick="activeNavMenu()"
+            class="icon"
+            id="mainNavIcon"
+          >
+            <svg width="70" height="70">
+              <image href="./img/menuBarIcon.svg" width="70" height="70" />
+            </svg>
+          </a>
+        </div>
+
+        <ul class="topMenu" id="topMenu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutUs.html">About Us</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="./shows.html">Shows</a></li>
+          <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+          <li><a href="./contactUs.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="busiSer card">
+        <h3>
+          The Zen Qin Orchestra undertake Guzheng performances for gala dinners,
+          marriages, opening celebrations, and various business events. <br />
+          <br />
+          We offer the following service:
+        </h3>
+
+        <ul class="service-content">
+          <li>
+            <span class="CService">Guzheng solo: </span><br />The performers
+            played a number of passionate and cheerful traditional Guzheng music
+            and romantic pop songs. All the popular songs were re-arranged by
+            our professinal composor Miss.Yuan. <br />
+            The music is romantic with a bit of Chinese style, such as:
+            <em>Blue and White Porcelain</em>
+            <em> Good Flower Moon Night,</em>
+            <em>The wedding in a dream</em>.etc.
+          </li>
+          <li>
+            <span class="CService"> Guzheng Duo: </span><br />Can play a variety
+            of classic love songs, music adaptations from films and TV drama.
+          </li>
+          <li>
+            <span class="CService">Chinese Classic Orchestra performance: </span
+            ><br />instruments includes: Erhu, Guzheng,Pipa,Chinese Bamboo
+            Flute. The performance includes popular songs,traditional festival
+            music and western songs.
+          </li>
+        </ul>
+      </section>
+
+      <section class="activities card">
+        <h1>Our Shows</h1>
+        <img src="./img/shows/associationShow.JPG" alt="Association Show" />
+        <span
+          >Our Three Tutors were Invited to Perform for Guangzhou Chinese
+          Traditional Music Association</span
+        >
+        <img src="./img/shows/showforEdely.jpg" alt="Show for Nursing Home" />
+        <span
+          >Our Orchestra peformanced for Guangzhou Nursing Home in Zhong Qiu
+          Festival</span
+        >
+        <img
+          src="./img/shows/showforExchange.jpg"
+          alt="Show for Cultural Exchange"
+        />
+        <span
+          >Our Orchestra peformanced for Chinese and Western Cultural Exchange in
+          Guangzhou</span
+        >
+        <img src="./img/shows/wedingshow.jpg" alt="Show in a wedding" />
+        <span>Our Orchestra peformanced in a wedding</span>
+      </section>
+
+      <section class="bandIntro card">
+        <h1>Zen Qin Orchestra Introduction</h1>
+        <img src="./img/shows/zentune.jpeg" alt="Feel the Zen From One Tune" />
+        <img src="./img/shows/bandMembers.jpg" alt="Zen Qin Orchestra" />
+        <p class="band-content">
+          The Zen Qin Orchestra was established in 2018. Miss. Lee XunZhi is the
+          artistic director. All members are our class students. The members of
+          the group have achieved excellent results in various guzheng open
+          competitions and examinations. The purpose of the orchestra is to give
+          more young people access to the art of Guzheng ensemble, to let the
+          members develop develop team spirit and a sense of responsibility, to
+          increase the sensitivity of hearing, and to provide art platforms on a
+          regular basis to raise their standard of music performance. Increase
+          the self-confidence and performance experience of the members. In
+          2019, the Zen Qin Orchestra participated in the
+          <em>Feel the Zen From One Tune</em>, and the performances of the
+          members were well received.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+        <nav class="bottom-nav">
+            <a href="./enrollForm.html" class="enrollBtn">Enroll Now!</a>
+          <ul class="bottomMenu" id="bottomMenu">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutUs.html">About Us</a></li>
+            <li><a href="./courses.html">Courses</a></li>
+            <li><a href="./shows.html">Shows</a></li>
+            <li><a href="./onlinecoaching.html">Online Coaching</a></li>
+            <li><a href="./contactUs.html">Contact</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Private Policy</a></li>
+          </ul>
+          <div class="icon-wrapper">
+              <a href="index.html"
+                ><img id="logo_footer" src="./img/Logo.png" alt="logo"
+              /></a>
+          <div class="copyright">&copy COPYRIGHT 2019 Diamondcn923 All Right RESERVED</div>
+        </nav>
+      </footer>
+
+    <script>
+      function activeNavMenu() {
+        const topMenu = document.getElementById("topMenu");
+
+        if (topMenu.className === "topMenu") {
+          topMenu.style.animation = "topMenuDisplay 1s ease forwards";
+          topMenu.className += " display";
+        } else {
+          topMenu.className = "topMenu";
+
+          topMenu.style.animation = "topMenuclapsed 1s ease forwards";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,169 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+#lead-banner {
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+    a.banner-content {
+      position: absolute;
+      top: 25%;
+      left: 48%;
+      span {
+        font-size: 2rem;
+        line-height: 3.5rem;
+      }
+
+      text-decoration: none;
+      color: $offwhite;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  //for screen width under 900px
+  @include banner;
+  .banner-content {
+    top: 15%;
+    left: 50%;
+    line-height: $headingLineHeight * 0.8;
+    text-align: center;
+    text-decoration: none;
+    color: $offwhite;
+  }
+}
+
+section {
+  @include H1;
+  @include for-tablet-landscape-up {
+    @include H1-large-screen;
+  }
+}
+
+#services {
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 2rem auto;
+    ul li {
+      width: 12rem;
+    }
+    ul li a {
+      font-size: 1.5rem;
+    }
+    ul img {
+      margin: 1.2rem 24%;
+    }
+  }
+
+  //for screen width under 900px
+  ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  li {
+    text-align: center;
+    width: 8rem;
+  }
+  img {
+    width: 60%;
+    margin: 1rem 18%;
+  }
+
+  a {
+    text-decoration: none;
+    color: $darkBrown;
+    font-weight: bold;
+    &:hover {
+      color: $navHover-color;
+    }
+  }
+  margin: 1.87rem 0;
+}
+
+#banner-2 {
+  @include for-tablet-landscape-up {
+    @include banner-large-screen;
+
+    #sub-title li {
+      margin: 0.6rem auto;
+    }
+  }
+
+  //for screen width under 900px
+  @include banner;
+  .banner-content {
+    top: 8%;
+    @media (max-width: 899px) {
+      line-height: 1.2rem * 1.5;
+    }
+
+    width: 90%;
+    text-decoration: none;
+    color: $offwhite;
+    #title {
+      @media (max-width: 899px) {
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 899px) {
+      #sub-title {
+        display: none;
+      }
+    }
+    @media (max-width: 899px) {
+      .enrollBtn {
+        @include enrolBtn;
+      }
+    }
+  }
+}
+
+#projects {
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 4rem auto 0 auto;
+    font-size: 1.2rem;
+    .student {
+      font-size: 1.5rem;
+    }
+    li span .stuContent {
+      font-size: 1.2rem;
+    }
+  }
+
+  //for screen width under 900px
+  margin: 2rem 0 0 0;
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  li {
+    margin-bottom: 2rem;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    .stuContent {
+      display: block;
+      padding: 6px;
+    }
+    @include card;
+  }
+  .student {
+    @media (max-width: 899px) {
+      font-size: 1.3rem;
+    }
+
+    color: $darkBrown;
+  }
+  img {
+    @include imageSetting;
+    margin-bottom: 0.5rem;
+  }
+}

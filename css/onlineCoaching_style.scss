@@ -1,0 +1,50 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+.onlineT {
+  span {
+    display: block;
+    font-size: 1.2rem;
+    margin: 1rem 0 0.5rem 0;
+    color: $logoZenColor;
+  }
+  img {
+    @include imageSetting;
+  }
+
+  @include for-tablet-landscape-up {
+    span {
+      font-size: 1.5rem;
+      margin: 1.5rem 0 1rem 0;
+    }
+  }
+}
+
+.card {
+  @include card;
+  margin-bottom: 1rem;
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+  }
+}
+
+.skypeT {
+  span {
+    display: block;
+    font-size: 1.2rem;
+
+    color: $logoZenColor;
+  }
+  .enrollBtn {
+    @include enrolBtn;
+  }
+  @include for-tablet-landscape-up {
+    .enrollBtn {
+      @include enrolBtn-large-screen;
+    }
+  }
+}

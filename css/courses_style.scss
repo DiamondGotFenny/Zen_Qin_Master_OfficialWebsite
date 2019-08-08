@@ -1,0 +1,71 @@
+@import "reset";
+@import "variables";
+@import "mixin";
+
+@include genSettings;
+
+.welcome {
+  margin: 0;
+
+  @include card;
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 0 auto;
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+}
+.card {
+  margin: 1rem 0;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+  h1 {
+    color: $darkBrown;
+  }
+  p {
+    font-size: 1.2rem;
+    color: $logoZenColor;
+  }
+  ul {
+    margin: 1rem 0;
+    li {
+      margin: 0.5rem 6px;
+    }
+  }
+
+  @include card;
+
+  img {
+    @include imageSetting;
+  }
+  .enrollBtn {
+    @include enrolBtn;
+  }
+  #findOutMore {
+    background-color: transparent;
+  }
+
+  @include for-tablet-landscape-up {
+    width: 900px;
+    margin: 1.3rem auto;
+    font-size: 1.5rem;
+    p {
+      font-size: 1.5rem;
+    }
+    .enrollBtn {
+      @include enrolBtn-large-screen;
+    }
+  }
+}
+
+#class-rules {
+  text-align: left;
+  li {
+    &::before {
+      content: "-";
+    }
+  }
+}
