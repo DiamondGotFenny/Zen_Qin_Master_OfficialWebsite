@@ -89,17 +89,10 @@
       </nav>
     </footer>
     <script>
-      function activeNavMenu() {
+       function activeNavMenu() {
         const topMenu = document.getElementById("topMenu");
 
-        if (topMenu.className === "topMenu") {
-          topMenu.style.animation = "topMenuDisplay 1s ease forwards";
-          topMenu.className += " display";
-        } else {
-          topMenu.className = "topMenu";
-
-          topMenu.style.animation = "topMenuclapsed 1s ease forwards";
-        }
+       topMenu.classList.toggle("menuActive");
       }
     </script>
   </body>

@@ -49,6 +49,7 @@
 
     @media (max-width: 899px) {
       height: 0;
+      transition: height 0.8s ease;
     }
 
     overflow: hidden;
@@ -67,21 +68,8 @@
   //that horizantal menu may disapear when you change screen from under 900
   //to 900 or above.
   @media (max-width: 899px) {
-    @keyframes topMenuDisplay {
-      from {
-        height: 0;
-      }
-      to {
-        height: 25rem;
-      }
-    }
-    @keyframes topMenuclapsed {
-      from {
-        height: 25rem;
-      }
-      to {
-        height: 0;
-      }
+    .menuActive {
+      height: 25rem;
     }
   }
 

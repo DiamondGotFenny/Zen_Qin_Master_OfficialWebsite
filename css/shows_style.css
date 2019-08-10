@@ -106,6 +106,8 @@ body {
 @media (max-width: 899px) {
   #main-nav ul {
     height: 0;
+    -webkit-transition: height 0.8s ease;
+    transition: height 0.8s ease;
   }
 }
 
@@ -120,37 +122,8 @@ body {
 }
 
 @media (max-width: 899px) {
-  @-webkit-keyframes topMenuDisplay {
-    from {
-      height: 0;
-    }
-    to {
-      height: 25rem;
-    }
-  }
-  @keyframes topMenuDisplay {
-    from {
-      height: 0;
-    }
-    to {
-      height: 25rem;
-    }
-  }
-  @-webkit-keyframes topMenuclapsed {
-    from {
-      height: 25rem;
-    }
-    to {
-      height: 0;
-    }
-  }
-  @keyframes topMenuclapsed {
-    from {
-      height: 25rem;
-    }
-    to {
-      height: 0;
-    }
+  #main-nav .menuActive {
+    height: 25rem;
   }
 }
 
